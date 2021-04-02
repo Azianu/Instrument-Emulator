@@ -1,0 +1,113 @@
+<style>
+ body{
+      background-color:rgb(244, 246, 247);}
+    .keys_1 button,.keys_2 button,.keys_3 button
+    {
+        width:100px;
+        height:100px;
+        margin:10px;
+        border-radius: 20px;
+        outline:none;
+        cursor:pointer;
+    }
+.keys_1 button:nth-child(1),.keys_3 button:nth-child(3)
+{
+    background-color:crimson;
+}
+.keys_1 button:nth-child(2),.keys_3 button:nth-child(2),.keys_2 button:nth-child(1),.keys_2 button:nth-child(3)
+{
+    background-color:lightblue;
+}
+.keys_1 button:nth-child(3),.keys_3 button:nth-child(1)
+{
+    background-color:yellowgreen
+}
+.keys_2 button:nth-child(2)
+{
+    background-color:rgb(192, 245, 0);
+}
+.container{
+    position: absolute;
+    top:20%;
+    left:35%;
+    
+}
+
+ p {
+   position: absolute;
+   bottom:0;
+ }   
+
+ p img{
+     margin-left: 770px;
+ width: 300px;
+ }
+</style>
+
+
+<script>
+    function toggleAudio(sound,number)
+    {
+        var audio=document.getElementById(sound)
+        ;
+        audio.play();
+        console.log("Audio toggle")
+    }
+    </script>
+
+<html>
+
+    <audio id="1">
+        <source src="Sounds/cat02.wav" type="audio/wav">
+    </audio>
+    <audio id="2">
+        <source src="Sounds/catscream.wav" type="audio/wav">
+    </audio>
+    <audio id="3">
+        <source src="Sounds/catscreech.wav" type="audio/wav">
+    </audio>
+
+
+    <audio id="4">
+        <source src="Sounds/hiss.mp3" type="audio/mp3">
+    </audio>
+    <audio id="5">
+        <source src="Sounds/kitten8.mp3" type="audio/mp3">
+    </audio>
+    <audio id="6">
+        <source src="Sounds/kittycry.wav" type="audio/wav">
+    </audio>
+
+
+    <audio id="7">
+        <source src="Sounds/scary catfight.mp3" type="audio/mp3">
+    </audio>
+    <audio id="8">
+        <source src="Sounds/Sound Effect - Cat Angry Meow.wav" type="audio/wav">
+    </audio>
+    <audio id="9">
+        <source src="Sounds/angry.mp3" type="audio/mp3">
+    </audio>
+
+
+<body >
+    <div class="container">
+    <div class="keys_1">
+<button  onclick="toggleAudio('1',0)"></button>
+<button  onclick="toggleAudio('2',0)"></button>
+<button  onclick="toggleAudio('3',0)"></button>
+</div>
+<div class="keys_2">
+    <button  onclick="toggleAudio('4',0)"></button>
+    <button  onclick="toggleAudio('5',0)"></button>
+    <button  onclick="toggleAudio('6',0)"></button>
+    </div>
+    <div class="keys_3">
+        <button  onclick="toggleAudio('7',0)"></button>
+        <button  onclick="toggleAudio('8',0)"></button>
+        <button  onclick="toggleAudio('9',0)"></button>
+        </div>
+    </div>
+    <p>
+        <img src="298-2986452_tabby-cat-clipart-transparent-background-transparent-background-kitten.png"></p>
+</body></html>
